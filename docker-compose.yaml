@@ -3,7 +3,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: library-service
     security_opt:
       - seccomp=unconfined
     ports:
