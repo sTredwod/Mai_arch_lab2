@@ -434,7 +434,7 @@ Middleware:
 **Запуск**
 
 ```bash
-Mai_arch_dz_var15/Laba2/library-service/library_service/tests$ bash smoke_tests.sh
+tests$ bash smoke_tests.sh
 ```
 
 ### Error tests
@@ -449,7 +449,7 @@ Mai_arch_dz_var15/Laba2/library-service/library_service/tests$ bash smoke_tests.
 **Запуск**
 
 ```bash
-Mai_arch_dz_var15/Laba2/library-service/library_service/tests$ bash error_tests.sh
+tests$ bash error_tests.sh
 ```
 
 ---
@@ -506,8 +506,7 @@ openapi.yaml
 
 ### Локальный запуск в userver-контейнере
 
-Из каталога проекта  
-**(именно нижнее подчёркивание, то есть `/Mai_arch_dz_var15/Laba2/library-service/library_service`)**
+Из каталога корня
 
 ```bash
 docker run --rm -it \
@@ -533,8 +532,7 @@ make build-debug
 
 ### Запуск через Docker Compose (если будет запускаться долго, подождите)
 
-Из каталога `library_service`  
-**(именно нижнее подчёркивание, то есть `/Mai_arch_dz_var15/Laba2/library-service/library_service`)**
+Из каталога корня
 
 ```bash
 docker compose up --build
